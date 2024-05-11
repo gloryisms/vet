@@ -8,7 +8,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  brandDescription = ['i probably raided u once', 'welcome to vetements', 'discord.gg/less', 'i got ur ip silly goose', 'dm @vhfq for an invite'];
+  brandDescription = ['i probably raided u once', 'welcome to vetements', 'discord.gg/less', 'i got ur ip silly goose', 'dm @vhfq for an invite', '@gloryisms on instagram'];
 
   titleChanger = (text, delay) => {
     if (!text) return;
