@@ -58,15 +58,16 @@
     <div class="background" style="display: none;">
       <div id="pattern"></div>
 
-      <audio controls autoplay id="audio" loop="">
-        <source src="assets/others/audio666.mp3" type="audio/mp4" />
-        <script>
-          const audio = document.getElementById('audio');
+      <audio id="audio" loop autoplay style="display: none;">
+  <source src="assets/others/audio666.mp3" type="audio/mp4" />
+  <script>
+    const audio = document.getElementById('audio');
 
-          app.audioElement = audio;
-          app.audioElement.volume = 0;
-        </script>
-      </audio>
+    app.audioElement = audio;
+    app.audioElement.volume = 0;
+  </script>
+</audio>
+
 
       <video id="background" loop="" muted="muted">
         <source src="assets/others/video666.mp4" type="video/mp4" />
