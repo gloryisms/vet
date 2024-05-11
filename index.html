@@ -58,15 +58,20 @@
     <div class="background" style="display: none;">
       <div id="pattern"></div>
 
-      <audio id="audio" loop autoplay style="display: none;">
+     <audio id="audio" loop style="display: none;">
   <source src="assets/others/audio666.mp3" type="audio/mp4" />
   <script>
     const audio = document.getElementById('audio');
 
     app.audioElement = audio;
     app.audioElement.volume = 0;
+
+    document.addEventListener('click', function() {
+      audio.play();
+    });
   </script>
 </audio>
+
 
 
       <video id="background" loop="" muted="muted">
