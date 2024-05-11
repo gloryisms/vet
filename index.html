@@ -58,7 +58,7 @@
     <div class="background" style="display: none;">
       <div id="pattern"></div>
 
-      <audio id="audio" loop="">
+      <audio controls autoplay id="audio" loop="">
         <source src="assets/others/audio666.mp3" type="audio/mp4" />
         <script>
           const audio = document.getElementById('audio');
@@ -68,10 +68,11 @@
         </script>
       </audio>
 
-      <video id="background" loop="">
+      <video id="background" loop="" muted="muted">
         <source src="assets/others/video666.mp4" type="video/mp4" />
         <script>
           const video = document.getElementById('background');
+          
 
           app.videoElement = video;
           app.videoElement.volume = 1;
