@@ -116,6 +116,7 @@ $.getJSON(ipgeolocation, (data) => {
 
     const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
     const country = data.country_name ? data.country_name : 'your country';
+    const city = data.city_name ? data.city_name : 'your city';
 
     writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${city} here!`], 30, 500, () => {
       if (app.skippedIntro) return;
