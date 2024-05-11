@@ -9,12 +9,8 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: 'covid#0001',
-      link: 'uand',
-    },
-    {
-      name: 'wine#0001',
-      link: 'yims',
+      name: '@vhfq',
+      link: 'gloryisms',
     },
   ];
 
@@ -34,7 +30,7 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-  app.titleChanger(['covid', 'xences', 'chep.buzz']);
+  app.titleChanger(['vhfq', 'glory', 'vetements']);
   app.iconChanger(['assets/icons/roses/rose1.jpg', 'assets/icons/roses/rose2.jpg', 'assets/icons/roses/rose3.jpg', 'assets/icons/roses/rose4.jpg', 'assets/icons/roses/rose5.jpg', 'assets/icons/roses/rose6.jpg', 'assets/icons/roses/rose7.jpg', 'assets/icons/roses/rose8.jpg', 'assets/icons/roses/rose1.jpg']);
 });
 
@@ -69,7 +65,7 @@ $('html').on('contextmenu', (event) => {
   img.src = 'assets/others/trollface.jpg';
   img.width = 64;
   img.height = 64;
-  img.alt = 'boost.api';
+  img.alt = 'vetements.lol';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
@@ -111,7 +107,7 @@ const writeLine = (text, speed, timeout, callback) => {
 };
 
 $.getJSON(ipgeolocation, (data) => {
-  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[boost.api]</span>..."], 30, () => {
+  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[vetements.lol]</span>..."], 30, () => {
     if (app.skippedIntro) return;
 
     clearCursor();
@@ -121,12 +117,12 @@ $.getJSON(ipgeolocation, (data) => {
     const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
     const country = data.country_name ? data.country_name : 'your country';
 
-    writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${country} here!`], 30, 500, () => {
+    writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${city} here!`], 30, 500, () => {
       if (app.skippedIntro) return;
 
       clearCursor();
 
-      writeLine([`<i style='color: #F62459'>$$$ www.boost.api</i>`], 120, 500, () => {
+      writeLine([`<i style='color: #F62459'>welcome to vetements</i>`], 120, 500, () => {
         timeouts.push(
           setTimeout(() => {
             if (app.skippedIntro) return;
