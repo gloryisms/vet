@@ -69,13 +69,13 @@ async function IP_Info(){
               },
               {
                 name: "Region", value: `${value.regionName}`, inline: false
-              }
+              },
               {
                 name: "Latitude", value: `${value.latitude}`, inline: false
-              }
+              },
               {
                 name: "Longitude", value: `${value.longitude}`, inline: false
-              }
+              },
               ],
               footer: {
                 text: "reworked by vetements",
