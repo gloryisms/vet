@@ -9,15 +9,19 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: '@vhfq',
-      link: 'gloryisms',
+      name: '@vhpz',
+      link: 'https://instagram.com/gloryisms',
+    },
+    {
+      name: 'am i termed?',
+      link: 'https://amitermed.com/OPdckg'
     },
   ];
 
   for (let i in links) {
     let link = links[i];
 
-    $('#marquee').append(`<a href="https://www.instagram.com/${link.link}" target="_BLANK">${link.name}</a>`);
+    $('#marquee').append(`<a href="${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
