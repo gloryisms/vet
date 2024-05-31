@@ -9,12 +9,16 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: '@vhpz',
+      name: '@v1jz',
       link: 'https://instagram.com/gloryisms',
     },
     {
       name: 'am i termed?',
       link: 'https://amitermed.com/OPdckg'
+    },
+    {
+      name: 'guns.lol',
+      link: 'https://guns.lol/vett'
     },
   ];
 
